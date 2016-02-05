@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Informations- und Recruitierungsveranstaltungen der Bundeswehr im Jahr 2016</title>
+    <!-- Mapbox -->
+    <script src='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet'/>
+
+    <!-- Leaflet location plugin -->
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.min.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.mapbox.css'
+          rel='stylesheet'/>
+    <!--[if lt IE 9]>
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.ie.css'
+          rel='stylesheet'/>
+    <![endif]-->
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/css/font-awesome.min.css'
+          rel='stylesheet'/>
+
+    <!-- Leaflet sidebar plugin -->
+    <link rel="stylesheet" href="css/leaflet-sidebar.css"/>
+    <script src="js/leaflet-sidebar.js"></script>
+
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        html, body, #map {
+            height: 100%;
+
+        }
+
+        .marker {
+            border-radius: 100%;
+            width: 6px;
+            height: 6px;
+            text-align: center;
+            line-height: 20px;
+            color: white;
+            background: #3ca0d3;
+        }
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+<script src="app.js"></script>
+</body>
+</html>
