@@ -37,7 +37,7 @@ PLZ = 4
 CITY = 5
 
 try:
-    geocoding = json.loads(read_file('geocode.json'))
+    geocoding = json.loads(read_file('data/geocode.json'))
 except:
     geocoding = {}
 cities = {}
@@ -90,5 +90,5 @@ for key, feature in cities.items():
 feature_collection = FeatureCollection(features)
 
 # Write to file
-write_file('features.geojson', json.dumps(feature_collection))
-write_file('geocode.json', json.dumps(geocoding))
+write_file('data/features.geojson', json.dumps(feature_collection))
+write_file('data/geocode.json', json.dumps(geocoding))
