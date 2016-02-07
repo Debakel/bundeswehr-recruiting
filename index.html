@@ -22,47 +22,27 @@
     <link rel="stylesheet" href="css/leaflet-sidebar.css"/>
     <script src="js/leaflet-sidebar.js"></script>
 
+    <!-- Github opticons -->
+    <link href='octicons/octicons.css'
+          rel='stylesheet'/>
 
-    <style>
-        body {
-            padding: 0;
-            margin: 0;
-        }
+    <link href='css/style.css'
+          rel='stylesheet'/>
 
-        html, body, #map {
-            height: 100%;
-
-        }
-
-        .marker {
-            border-radius: 100%;
-            width: 6px;
-            height: 6px;
-            text-align: center;
-            line-height: 20px;
-            color: white;
-            background: #3ca0d3;
-        }
-
-
-        @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-        h1 {
-            position: absolute;
-            top: 0px;
-            right: 15px;
-            color: black;
-            font-size: 12px;
-            background-color: white;
-            font-family: 'Open Sans', sans-serif;
-            padding:3px;
-
-        }
-    </style>
 </head>
 <body>
 
 <div id="map"></div>
-<h1>Rekrutierungs- und Infoveranstaltungen der Bundeswehr (2016)</h1>
+
+<div id="info">
+    <h1>Rekrutierungs- und Infoveranstaltungen der Bundeswehr (2016)</h1>
+    <span class="octicon octicon-cloud-download">
+        <a href="data/termine2016.zip">Als Liste</a>
+    </span>
+    <span class="octicon octicon-mark-github">
+        <a href="https://github.com/Debakel/bundeswehr-recruiting">Quellcode</a>
+    </span>
+</div>
 <script src="app.js"></script>
 </body>
 </html>
